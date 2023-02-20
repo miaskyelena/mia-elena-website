@@ -12,4 +12,6 @@ body{
     height:100vh; 
     overflow:scroll;
     margin: 8px;
+    color: rgb(255, 255, 255);
 }
+
