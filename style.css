@@ -4,8 +4,7 @@
 }
 
 body{
-    font-family: 'Open Sans', sans-serif;
-    display:block; 
+    font-family: 'Open Sans', sans-seri                                                                                                                                                                                         
     flex-direction:column;
     align-items:baseline; 
     justify-content: center;
@@ -15,3 +14,91 @@ body{
     color: rgb(255, 255, 255);
 }
 
+#tentacles {
+    width: 50px;
+}
+
+.header {
+    display: flex;
+    background-color: #2f933e;
+    padding: 1%;
+    align-items: center;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}
+
+#header-text {
+    display: flex;
+    text-align: right;
+}
+
+
+.stats-container {
+    display: flex;
+    align-items: flex-end;
+}
+.stats-card:hover{
+    background-color: darkgoldenrod;
+    cursor: pointer;
+    box-shadow: 0 0 50px lightblue;
+}
+.stats-card {
+    align-items: flex-end;
+    background-color: #2f933e;
+    border-radius: 7px;
+    padding: 1%;
+    margin: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+#num-contributions, #total-raised, #num-games {
+    font-size: 50px;
+}
+
+#games-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.game-img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #FFFFFF;
+}
+
+.game-card {
+    background-color:#00425A;
+    padding: 1%;
+    margin: 1%;
+    width: 300px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.game-card:hover{
+    background-color: darkgoldenrod;
+    cursor: pointer;
+    box-shadow: 0 0 50px lightblue;
+}
+
+.game-card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
+}
+
+#button-container {
+    text-align: center;
+}
+
+button {
+    font-family: 'Cabin';
+    border: none;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 7px;
+    background-color: #00425A;
+    color: #FFFFFF; 
+}
