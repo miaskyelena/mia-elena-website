@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 * {
     box-sizing: border-box;
 }
 
 body{
-    font-family: 'Open Sans', sans-seri;                                                                                                                                                                                         
+    font-family: 'Nunito', sans-seri;                                                                                                                                                                                         
     flex-direction: column;
     align-items:baseline; 
     justify-content: center;
@@ -12,14 +12,57 @@ body{
     overflow:scroll;
     margin: 8px;
     color: rgb(255, 255, 255);
+    background-color:#000000;
+}
+
+.director-spotlight{
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.director-spotlight-bio{
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+.responsive {
+    float: left;
+    width: 100%;
+    height: 500px; 
+    object-fit:cover;
+    position: relative;
+  }
+
+.second-txt {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
 }
 
 
-.responsive {
-    float: left;
-    max-width: 100%;
-    height: 500px; 
-    object-fit:cover;
+/* unvisited link */
+a:link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* visited link */
+  a:visited {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    text-decoration: none;
+    color:lightyellow;
+  }
+  
+  /* selected link */
+  a:active {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
   }
 
 #tentacles {
@@ -31,10 +74,16 @@ body{
     background-color:black;
     padding: 1%;
     align-items: center;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
+    margin-left: 10px;
+  
 }
+
+.nav-bar {
+    display: flex;
+    position:absolute;
+    right: 2em;
+}
+
 
 
 .stats-container {
@@ -42,7 +91,7 @@ body{
     align-items:normal;
 }
 .stats-card:hover{
-    background-color: darkgoldenrod;
+    background-color: lightyellow;
     cursor: pointer;
     box-shadow: 0 0 50px lightblue;
 }
@@ -91,15 +140,20 @@ body{
 }
 
 #button-container {
-    text-align: center;
+    text-align:center;
 }
 
 button {
-    font-family: 'Cabin';
+    font-family: 'Nunito', sans-seri;                                                                                                                                                                                         
     border: none;
+    border-radius: 3px;
     padding: 1%;
     margin: 1%;
-    border-radius: 7px;
-    background-color: #00425A;
+    background-color: #242525;
     color: #FFFFFF; 
+}
+
+button:hover { 
+    color: black;
+    background-color: lightyellow;
 }
