@@ -1,18 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 * {
     box-sizing: border-box;
 }
 
 body{
-    font-family: 'Open Sans', sans-seri                                                                                                                                                                                         
-    flex-direction:column;
+    font-family: 'Nunito', sans-seri;                                                                                                                                                                                         
+    flex-direction: column;
     align-items:baseline; 
     justify-content: center;
     height:100vh; 
     overflow:scroll;
     margin: 8px;
     color: rgb(255, 255, 255);
+    background-color:#000000;
 }
+
+.slider-frame{
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+    margin-right:20px;
+    margin-left:20px;
+
+}
+
+/*-----SlIDE ANIMATION-----*/
+@keyframes slide_animation{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1200px;}
+    30% {left:1200px;}
+    40% {left: 2400px;}
+    50% {left: 2400px;}
+    60% {left: 1200px;}
+    70% {left: 1200px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    100% {left:0px;}
+}
+
+@-webkit-keyframes slide_animation{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1200px;}
+    30% {left:1200px;}
+    40% {left: 2400px;}
+    50% {left: 2400px;}
+    60% {left: 1200px;}
+    70% {left: 1200px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    100% {left:0px;}
+}
+
+.slide-images{
+    width: 3600px;
+    height: 500px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    animation-name: slide_animation;
+    -webkit-animation-duration: 60s;
+    animation-duration: 60s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.img-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+
+}
+
+
+.director-spotlight{
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.director-spotlight-bio{
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+.responsive {
+    float: left;
+    width: 100%;
+    height: 500px; 
+    object-fit:cover;
+    position: relative;
+  }
+
+.second-txt {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+
+
+/* unvisited link */
+a:link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* visited link */
+  a:visited {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    text-decoration: none;
+    color:lightyellow;
+  }
+  
+  /* selected link */
+  a:active {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
 
 #tentacles {
     width: 50px;
@@ -20,34 +135,33 @@ body{
 
 .header {
     display: flex;
-    background-color: #2f933e;
+    background-color:black;
     padding: 1%;
     align-items: center;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
+    margin-left: 10px;
+  
 }
 
-#header-text {
+.nav-bar {
     display: flex;
-    text-align: right;
+    position:absolute;
+    right: 2em;
 }
+
 
 
 .stats-container {
     display: flex;
-    align-items: flex-end;
+    align-items:normal;
 }
 .stats-card:hover{
-    background-color: darkgoldenrod;
+    background-color: lightyellow;
     cursor: pointer;
     box-shadow: 0 0 50px lightblue;
 }
 .stats-card {
-    align-items: flex-end;
-    background-color: #2f933e;
-    border-radius: 7px;
-    padding: 1%;
+    align-items:flex-end;
+    background-color: #3e3f3e;
     margin: 1%;
     width: 100%;
     text-align: center;
@@ -90,15 +204,20 @@ body{
 }
 
 #button-container {
-    text-align: center;
+    text-align:center;
 }
 
 button {
-    font-family: 'Cabin';
+    font-family: 'Nunito', sans-seri;                                                                                                                                                                                         
     border: none;
+    border-radius: 3px;
     padding: 1%;
     margin: 1%;
-    border-radius: 7px;
-    background-color: #00425A;
+    background-color: #242525;
     color: #FFFFFF; 
+}
+
+button:hover { 
+    color: black;
+    background-color: lightyellow;
 }
