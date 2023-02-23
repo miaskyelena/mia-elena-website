@@ -19,10 +19,33 @@ body{
     overflow: hidden;
     height: 400px;
     width: 100%;
-    margin-right:20px;
-    margin-left:20px;
+}
+
+.slide-images{
+    width: 3600px;
+    height: 500px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    animation-name: slide_animation;
+    -webkit-animation-duration: 60s;
+    animation-duration: 60s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.img-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
 
 }
+
 
 /*-----SlIDE ANIMATION-----*/
 @keyframes slide_animation{
@@ -52,32 +75,6 @@ body{
     90% {left: 0px;}
     100% {left:0px;}
 }
-
-.slide-images{
-    width: 3600px;
-    height: 500px;
-    margin: 0 0 0 -2400px;
-    position: relative;
-    -webkit-animation-name: slide_animation;
-    animation-name: slide_animation;
-    -webkit-animation-duration: 60s;
-    animation-duration: 60s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-    -webkit-animation-play-state: running;
-    animation-play-state: running;
-}
-
-.img-container{
-    height: 800px;
-    width: 1200px;
-    position: relative;
-    float: left;
-
-}
-
 
 .director-spotlight{
     margin-left: 20px;
